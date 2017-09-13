@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body{
+    background: teal;
+}
+
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-size-adjust: 600%;
+    font-weight: 200;
+    color:white;
+    text-align: center;
+
+}
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size-adjust: 150%;
+    color: black;
+    text-align: center;
+    padding: 10px, 20px;
+    margin: 8px 0px;
+
+}
+
+div.velkommen{
+    border: 3px solid;
+    border-radius: 13px;
+    max-width: 350px;
+    margin: auto;
+
+}
+
+div.velkommen:hover{
+    border: 3px solid;color: white;
+}
+h2:hover{
+    color: black;
+}
+
+
+
+
