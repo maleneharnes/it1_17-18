@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+        div.grid{
+            display: grid;
+            grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside1"
+            "aside2"
+            "footer"
+        ;
+            grid-gap: 2px;
+        }
+
+        div.header{
+            background-color: #4aaaa5;
+            grid-area: header;
+        }
+
+        div.nav{
+            background-color: #003333;
+            grid-area: nav;
+        }
+
+        div.main{
+            background-color: #28abe3;
+            grid-area: main;
+        }
+
+        div.aside1{
+            background-color: #35404f;
+            grid-area: aside1;
+        }
+
+        div.aside2{
+            background-color: #7accc8;
+            grid-area: aside2;
+        }
+
+        div.footer{
+            background-color: #db3340;
+            grid-area: footer;
+        }
+
+       @media (min-width: 500px) {
+           div.grid{
+               grid-template-columns: 2fr 3fr;
+               grid-template-areas:
+                "header     header"
+                "nav        nav"
+                "aside1     main"
+                "aside2     footer";
+           }
+       }
+
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="grid">
+
+    <div class="header">
+        <h1>Grid-side</h1>
+    </div>
+
+    <div class="nav">
+        Meny
+    </div>
+
+    <div class="main">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet architecto asperiores, aut corporis dicta
+            hic impedit iure laboriosam minima nam, natus odit pariatur perferendis rem repudiandae sapiente voluptate
+            voluptates!</p>
+        <p>Aliquam at debitis dolor dolores eius fugit hic laborum magni minus nihil nostrum quas quis quod quos
+            reiciendis reprehenderit saepe temporibus totam vel, voluptatibus! Ducimus earum fugit laboriosam neque
+            tempora.</p>
+
+    </div>
+
+    <div class="aside1">
+    Aside 1
+    </div>
+
+    <div class="aside2">
+    Aside 2
+    </div>
+
+    <div class="footer">
+    Footer
+    </div>
+
+</div>
+
+</body>
+</html>
